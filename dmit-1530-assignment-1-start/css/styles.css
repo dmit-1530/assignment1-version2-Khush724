@@ -15,3 +15,17 @@ header, footer {
     color: #fff;
     padding: 2rem 4rem;   
 }
+
+/* Universal styles */
+a {
+    all: unset;
+}
+
+/* Styling for Homepage */
+
+/* Layout for Homepage */
+
+
+/* Styling for Gallerypage */
+
+/* Layout for Gallerypage */
