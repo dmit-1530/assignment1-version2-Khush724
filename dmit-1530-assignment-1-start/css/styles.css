@@ -3,18 +3,20 @@
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
-    --h2-size:
+    --h2: 2rem;
 }
 
 body {
     color: #000;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     /* text-align: center; */
 }
 
 header,
 footer {
     background-color: var(--blue-grey-50);
-    color: #fff;
+    color: var(--blue-grey-200);
     padding: 2rem 4rem;
 }
 
@@ -38,7 +40,7 @@ header {
 }
 
 .logo img {
-    width: 40%;
+    width: 36%;
 }
 
 header li,
@@ -55,6 +57,7 @@ footer li {
 h1,
 footer h2 {
     font-size: 3.5rem;
+    font-family: "Libre Baskerville";
 }
 
 header ul {
@@ -93,6 +96,99 @@ footer p:nth-of-type(2) {
 }
 
 /* Styling for Homepage */
+
+main {
+    text-align: center;
+}
+
+.home section {
+    padding: 4rem 1.68rem;
+}
+
+.home section:first-child {
+    background-color: var(--blue-grey-50);
+}
+
+main h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: var(--h2);
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.home .btn {
+    background-color: #000000;
+    color: var(--blue-grey-50);
+    padding: 1rem;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.home section:first-child .btn {
+    margin: 2rem 0 3rem;
+}
+
+.home main img {
+    border-radius: 0.5rem;
+}
+
+span {
+    display: block;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.home section:nth-child(2)>p:first-of-type {
+    margin-bottom: 4rem;
+}
+
+.home article h3,
+.home article p {
+    margin-bottom: 1rem;
+}
+
+.home section:nth-child(3) {
+    background-color: #78909C;
+    color: var(--blue-grey-50);
+}
+
+.home section:nth-child(3) p:first-of-type {
+    margin: 3rem 0 1rem;
+}
+
+.home section:nth-child(4) {
+    background-color: #CFD8DC;
+}
+
+.home section:nth-child(4)>article div {
+    text-align: left;
+    margin: 3rem 0;
+}
+
+.home section:nth-child(4)>article ul {
+    margin-left: 1.5rem;
+}
+
+.home section:nth-child(4)>span {
+    margin-bottom: 0.5rem;
+}
+
+.home section:nth-child(5) {
+    background-color: var(--blue-grey-900);
+}
+
+.home section:nth-child(5) div {
+    background-color: var(--blue-grey-50);
+    border-radius: 0.5rem;
+    padding: 4rem 1rem;
+}
+
+.home section:nth-child(5) p { 
+    margin-bottom: 2rem;
+}
+
+
 
 
 /* Media Queries for Homepage */
