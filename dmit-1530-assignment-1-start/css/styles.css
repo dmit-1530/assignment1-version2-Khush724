@@ -3,17 +3,19 @@
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
+    --h2-size:
 }
 
 body {
     color: #000;
-    text-align: center; 
+    /* text-align: center; */
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--blue-grey-50);
     color: #fff;
-    padding: 2rem 4rem;   
+    padding: 2rem 4rem;
 }
 
 /* Universal styles */
@@ -21,11 +23,80 @@ a {
     all: unset;
 }
 
+ul {
+    padding: 0;
+}
+
+.inner-container {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #111111;
+    color: var(--blue-grey-50);
+}
+
+.logo img {
+    width: 40%;
+}
+
+header li,
+footer li {
+    list-style-type: none;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+h1,
+footer h2 {
+    font-size: 3.5rem;
+}
+
+header ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+footer {
+    background-color: #191919;
+    padding: 4rem 2rem;
+    font-size: 0.75rem;
+}
+
+footer .logo {
+    justify-content: flex-start;
+}
+
+footer li>strong {
+    font-size: 1rem;
+}
+
+.navigation {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+footer p:nth-of-type(2) {
+    text-align: center;
+}
+
 /* Styling for Homepage */
 
-/* Layout for Homepage */
 
+/* Media Queries for Homepage */
 
 /* Styling for Gallerypage */
 
-/* Layout for Gallerypage */
+/* Media Queries for Gallery */
