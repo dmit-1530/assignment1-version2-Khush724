@@ -16,8 +16,7 @@ body {
 header,
 footer {
     background-color: var(--blue-grey-50);
-    color: var(--blue-grey-200);
-    padding: 2rem 4rem;
+    color: var(--blue-grey-50);
 }
 
 /* Universal styles */
@@ -27,6 +26,7 @@ a {
 
 ul {
     padding: 0;
+    margin: 0;
 }
 
 .inner-container {
@@ -37,10 +37,11 @@ ul {
 header {
     background-color: #111111;
     color: var(--blue-grey-50);
+    padding: 3rem 2.8rem 2rem;
 }
 
 .logo img {
-    width: 36%;
+    width: 30%;
 }
 
 header li,
@@ -52,6 +53,7 @@ footer li {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 h1,
@@ -68,7 +70,7 @@ header ul {
 
 footer {
     background-color: #191919;
-    padding: 4rem 2rem;
+    padding: 4rem 1.8rem 4.6rem;
     font-size: 0.75rem;
 }
 
@@ -78,6 +80,14 @@ footer .logo {
 
 footer li>strong {
     font-size: 1rem;
+}
+
+footer p {
+    color: var(--blue-grey-200);
+}
+
+footer .logo img {
+    width: 39%;
 }
 
 .navigation {
@@ -105,7 +115,7 @@ main {
     padding: 4rem 1.68rem;
 }
 
-.home section:first-child {
+section:first-child {
     background-color: var(--blue-grey-50);
 }
 
@@ -115,6 +125,7 @@ main h2 {
     line-height: 1.5;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .home .btn {
@@ -129,14 +140,14 @@ main h2 {
     margin: 2rem 0 3rem;
 }
 
-.home main img {
+main img {
     border-radius: 0.5rem;
 }
 
 span {
     display: block;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 2.3rem;
 }
 
 .home section:nth-child(2)>p:first-of-type {
@@ -148,7 +159,7 @@ span {
     margin-bottom: 1rem;
 }
 
-.home section:nth-child(3) {
+section:nth-child(3) {
     background-color: #78909C;
     color: var(--blue-grey-50);
 }
@@ -174,7 +185,8 @@ span {
     margin-bottom: 0.5rem;
 }
 
-.home section:nth-child(5) {
+.home section:nth-child(5),
+.gallery section:nth-child(4) {
     background-color: var(--blue-grey-900);
 }
 
@@ -184,15 +196,62 @@ span {
     padding: 4rem 1rem;
 }
 
-.home section:nth-child(5) p { 
+.home section:nth-child(5) p {
     margin-bottom: 2rem;
 }
 
-
-
-
-/* Media Queries for Homepage */
-
 /* Styling for Gallerypage */
+.gallery section {
+    padding: 4rem 2rem;
+    text-align: left;
+}
 
-/* Media Queries for Gallery */
+.gallery section:first-child img {
+    margin: 3rem 0 0;
+}
+
+.gallery figcaption {
+    margin-top: 1rem;
+}
+
+.gallery h3 {
+    margin: 3.75rem 0 2rem;
+}
+
+.gallery article:nth-of-type(2) h3 {
+    margin: 2.5rem 0 2rem;
+}
+
+.gallery section:nth-child(3) h2,
+.gallery section:last-child h2 {
+    text-align: left;
+}
+
+.gallery section:nth-child(3) p {
+    margin-top: 1.5rem;
+}
+
+.gallery section:last-child {
+    color: #FFF;
+}
+
+.gallery section:last-child h2 {
+    margin-bottom: 3rem;
+}
+
+.gallery section:last-child ul {
+    margin: 3rem 0 3rem;
+}
+
+.gallery section:last-child ul li {
+    margin-bottom: 1.2rem;
+}
+
+/* Media Queries*/
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
