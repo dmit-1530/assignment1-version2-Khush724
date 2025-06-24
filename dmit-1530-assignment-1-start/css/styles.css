@@ -172,11 +172,12 @@ section:nth-child(3) {
     background-color: #CFD8DC;
 }
 
-.home section:nth-child(4) article{
+.home section:nth-child(4) article {
     text-align: left;
 }
 
-.home section:nth-child(4) article span, .home section:nth-child(4) article img  {
+.home section:nth-child(4) article span,
+.home section:nth-child(4) article img {
     margin-top: 3rem;
 }
 
@@ -361,7 +362,7 @@ section:nth-child(3) {
         margin-top: 0;
     }
 
-    .gallery section:last-child > div > img {
+    .gallery section:last-child>div>img {
         width: 40%;
     }
 
@@ -439,7 +440,7 @@ section:nth-child(3) {
         margin-left: 2rem;
     }
 
-    .gallery section:last-child > div > img {
+    .gallery section:last-child>div>img {
         width: 40%;
     }
 
