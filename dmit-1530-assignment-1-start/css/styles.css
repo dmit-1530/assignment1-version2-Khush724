@@ -101,7 +101,7 @@ li {
     margin-bottom: 1rem;
 }
 
-footer p:nth-of-type(2) {
+footer>p:last-child {
     text-align: center;
 }
 
@@ -194,6 +194,8 @@ section:nth-child(3) {
     background-color: var(--blue-grey-50);
     border-radius: 0.5rem;
     padding: 4rem 1rem;
+    max-width: 28rem;
+    margin: 0 auto;
 }
 
 .home section:nth-child(5) p {
@@ -249,9 +251,108 @@ section:nth-child(3) {
 
 /* Media Queries*/
 @media screen and (min-width: 768px) {
-    
+    header {
+        display: flex;
+        gap: 12rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 39%;
+    }
+
+    header li,
+    .logo {
+        margin: 0;
+    }
+
+    footer>div {
+        display: flex;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+    footer>div>div:first-child {
+        width: 47%;
+    }
+
+    footer .logo img {
+        width: 100%;
+    }
+
+    .navigation {
+        gap: 4rem;
+        margin-top: 0;
+    }
+
+    footer>p:last-child {
+        margin: 0 8rem;
+    }
+
+    .home section:nth-child(2)>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        text-align: left;
+    }
+
+    .home section:nth-child(2) article {
+        width: calc((100% - 1.5rem) / 2);
+    }
+
+    .home section:nth-child(4) article,
+    .gallery section:first-child article,
+    .gallery section:nth-child(3) div {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .home section:nth-child(4) article img,
+    .gallery section:first-child article>img {
+        width: 50%;
+    }
+
+    .home section:nth-child(4) article:nth-of-type(2) img {
+        order: -1;
+    }
+
+    .gallery section:first-child article {
+        align-items: flex-start;
+    }
+
+    .gallery section:first-child article:nth-of-type(2) div {
+        width: 75%;
+        order: -1;
+    }
+
+    .gallery section:nth-child(3) h2,
+    .gallery section:last-child h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .gallery section:nth-child(3) div {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .gallery section:nth-child(3) p {
+        width: calc((100% - 1.5rem) / 2);
+    }
+
+    .gallery section:last-child>div {
+        display: flex;
+        gap: 2rem;
+        align-items: stretch;
+        margin-top: 3rem;
+    }
+
+    .gallery section:last-child ul{
+        margin-top: 0;
+    }
+
 }
 
-@media screen and (min-width: 1440px) {
-    
-}
+@media screen and (min-width: 1440px) {}
