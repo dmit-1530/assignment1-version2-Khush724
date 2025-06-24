@@ -318,10 +318,6 @@ section:nth-child(3) {
         order: -1;
     }
 
-    .gallery section:first-child article {
-        align-items: flex-start;
-    }
-
     .gallery section:first-child article:nth-of-type(2) div {
         width: 75%;
         order: -1;
@@ -355,4 +351,75 @@ section:nth-child(3) {
 
 }
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 0 13rem;
+    }
+
+    header .logo {
+        margin: 2rem 0;
+    }
+
+    footer {
+        padding: 3rem 13rem;
+    }
+
+    footer>div { 
+        justify-content: space-between;
+    }
+
+    footer>div>div:first-child {
+        width: 30%;
+    }
+
+    .navigation {
+        gap: 7rem;
+    }
+    
+    .home section:first-child > div, .home section:nth-last-child(-n+4) {
+        padding: 4rem 13.5rem;
+    }
+
+    .home section:nth-child(2) article {
+        width: calc((100% - 3rem) / 3);
+    }
+
+    .home section:nth-child(4) > div{
+        display: flex;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .home section:nth-child(4) article {
+        text-align: left;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .home section:nth-child(4) article img {
+        width: 100%;
+    }
+
+    .home section:nth-child(4) article:nth-of-type(2) img {
+        order: 1;
+        height: 100%;
+    }
+
+    .home section:nth-child(5) div {
+        max-width: 42rem;
+    }
+
+    .gallery section{
+        padding: 4rem 13.5rem;
+    }
+
+    .gallery section:first-child article:nth-of-type(2) div {
+        width: 55%;
+        order: -1;
+    }
+
+    .gallery section:last-child ul {
+        margin-left: 2rem;
+    }
+
+}
