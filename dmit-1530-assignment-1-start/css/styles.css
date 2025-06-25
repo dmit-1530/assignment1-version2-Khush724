@@ -10,7 +10,6 @@ body {
     color: #000;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    /* text-align: center; */
 }
 
 header,
@@ -30,7 +29,7 @@ ul {
 }
 
 .inner-container {
-    max-width: 90rem;
+    max-width: 1026px;
     margin: 0 auto;
 }
 
@@ -101,7 +100,7 @@ li {
     margin-bottom: 1rem;
 }
 
-footer>p:last-child {
+footer .inner-container>p:last-child {
     text-align: center;
 }
 
@@ -150,7 +149,7 @@ span {
     font-size: 2.3rem;
 }
 
-.home section:nth-child(2)>p:first-of-type {
+.home section:nth-child(2) .inner-container>p:first-of-type {
     margin-bottom: 4rem;
 }
 
@@ -182,7 +181,7 @@ section:nth-child(3) {
 }
 
 
-.home section:nth-child(4)>article div {
+.home section:nth-child(4) .inner-container>article div {
     margin: 3rem 0;
 }
 
@@ -190,7 +189,7 @@ section:nth-child(3) {
     margin-left: 1.5rem;
 }
 
-.home section:nth-child(4)>span {
+.home section:nth-child(4) .inner-container>span {
     margin-bottom: 0.5rem;
 }
 
@@ -264,7 +263,8 @@ section:nth-child(3) {
 
 /* Media Queries*/
 @media screen and (min-width: 768px) {
-    header {
+
+    header>.inner-container {
         display: flex;
         gap: 12rem;
         justify-content: space-between;
@@ -280,13 +280,13 @@ section:nth-child(3) {
         margin: 0;
     }
 
-    footer>div {
+    footer>.inner-container>div {
         display: flex;
         align-items: flex-start;
         gap: 2.5rem;
     }
 
-    footer>div>div:first-child {
+    footer>.inner-container>div>div:first-child {
         width: 47%;
     }
 
@@ -299,11 +299,11 @@ section:nth-child(3) {
         margin-top: 0;
     }
 
-    footer>p:last-child {
+    footer>.inner-container>p:last-child {
         margin: 0 8rem;
     }
 
-    .home section:nth-child(2)>div {
+    .home section:nth-child(2)>.inner-container>div {
         display: flex;
         flex-wrap: wrap;
         gap: 1.5rem;
@@ -316,7 +316,7 @@ section:nth-child(3) {
 
     .home section:nth-child(4) article,
     .gallery section:first-child article,
-    .gallery section:nth-child(3) div {
+    .gallery section:nth-child(3) .inner-container div {
         display: flex;
         align-items: center;
         gap: 1.5rem;
@@ -342,7 +342,7 @@ section:nth-child(3) {
         margin-bottom: 0;
     }
 
-    .gallery section:nth-child(3) div {
+    .gallery section:nth-child(3) .inner-container div {
         align-items: flex-start;
         flex-wrap: wrap;
     }
@@ -351,7 +351,7 @@ section:nth-child(3) {
         width: calc((100% - 1.5rem) / 2);
     }
 
-    .gallery section:last-child>div {
+    .gallery section:last-child>.inner-container>div {
         display: flex;
         gap: 2rem;
         align-items: stretch;
@@ -362,30 +362,19 @@ section:nth-child(3) {
         margin-top: 0;
     }
 
-    .gallery section:last-child>div>img {
+    .gallery section:last-child>.inner-container>div>img {
         width: 40%;
     }
 
 }
 
-@media screen and (min-width: 1440px) {
-    header {
-        padding: 0 13rem;
-    }
+@media screen and (min-width: 1026px) {
 
-    header .logo {
-        margin: 2rem 0;
-    }
-
-    footer {
-        padding: 3rem 13rem;
-    }
-
-    footer>div {
+    footer>.inner-container>div {
         justify-content: space-between;
     }
 
-    footer>div>div:first-child {
+    footer>.inner-container>div>div:first-child {
         width: 30%;
     }
 
@@ -393,25 +382,28 @@ section:nth-child(3) {
         gap: 7rem;
     }
 
-    .home section:first-child>div,
-    .home section:nth-last-child(-n+4) {
-        padding: 4rem 15.7rem;
+    .home section:first-child img {
+        width: 100%;
     }
 
     .home section:nth-child(2) article {
         width: calc((100% - 3rem) / 3);
     }
 
-    .home section:nth-child(4)>div {
+    .home section:nth-child(4)>.inner-container>div {
         display: flex;
         align-items: stretch;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .home section:nth-child(4) article {
         text-align: left;
         flex-direction: column;
         margin-top: 3rem;
+    }
+
+    .home section:nth-child(4) article:nth-of-type(2) div {
+        height: 46%;
     }
 
     .home section:nth-child(4) article img {
